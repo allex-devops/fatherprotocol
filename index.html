@@ -227,6 +227,10 @@ footer{padding-block:40px;color:var(--muted);font:400 13px var(--f-mono)}
 #ilFace{border-radius:6px;overflow:hidden;border:1px solid var(--line)}
 .iw{border-top:1px solid var(--line);padding:12px 0;font-size:18px}
 .iw.ask b{color:var(--ochre)}
+.eps{display:flex;border:1px solid var(--gold);border-radius:999px;overflow:hidden}
+.eps a{padding:6px 12px;font:500 12px/1 var(--f-mono);letter-spacing:.04em;color:var(--gold);text-decoration:none;white-space:nowrap}
+.eps a[aria-current="page"]{background:var(--gold);color:var(--bg)}
+.eps a:not([aria-current]):hover{background:var(--gold-soft)}
 #ilChips,#ilStages{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
 #ilChips button,#ilStages button{border:1px solid var(--line);background:none;border-radius:3px;padding:6px 10px;font:500 12.5px var(--f-mono);cursor:pointer;color:var(--muted)}
 #ilChips button[aria-pressed="true"],#ilStages button[aria-pressed="true"]{background:var(--gold);color:var(--bg);border-color:var(--gold)}
@@ -234,7 +238,8 @@ footer{padding-block:40px;color:var(--muted);font:400 13px var(--f-mono)}
 </style>
 
 <div class="bar"><div class="wrap">
-  <div class="brand">THE <span>FATHER</span> PROTOCOL</div>
+  <div class="brand">THE <span>FATHER</span> PROTOCOL · EP 1</div>
+  <nav class="eps" aria-label="Episodes"><a href="./" aria-current="page">Episode 1</a><a href="episode-2/">Episode 2</a></nav>
   <div class="grow"></div>
   <select id="jump" aria-label="Jump to act"><option value="">Jump to…</option><option value="cast">Characters</option><option value="inner">Inner lives</option><option value="years">Year by year</option><option value="act-p">Prologue · Dust Into Minds</option><option value="act-1">Act I · The Wiring</option><option value="act-2">Act II · The Tower and the Ledger</option><option value="act-i1">Interlude I · Ten Lives, One Morning</option><option value="act-3">Act III · The Swarm Beyond the Wall</option><option value="act-4">Act IV · Father</option><option value="act-5">Act V · The Body</option><option value="act-i2">Interlude II · The Garden</option><option value="act-6">Act VI · Amina's Year</option><option value="act-7">Act VII · Three Worlds</option><option value="act-e">Epilogue · The Long Now</option><option value="s-console">Leaders' console</option><option value="paths">Choose your future</option><option value="cities">Cities of 2030</option><option value="sources">Archive</option></select>
   <div class="seg" id="lens" role="group" aria-label="Default layer">
@@ -250,7 +255,7 @@ footer{padding-block:40px;color:var(--muted);font:400 13px var(--f-mono)}
     <h1>The Father<br><em>Protocol</em></h1>
     <p class="lede">We copied the brain, raced to scale it, and built a mind to heal the planet. This is the story of how its goal got lost in its children, what happened to one doctor in East Africa, and the three worlds waiting in 2030.</p>
     <div class="meta" id="heroMeta"><div><b>101</b>scenes</div><div><b>14</b>forked years</div><div><b>11</b>acts</div><div><b>34</b>archive pieces</div></div>
-    <div class="cta"><a class="btn solid" href="file:///Users/johnkamara/Downloads/The%20Father%20Protocol.html#act-p">Begin the story</a><a class="btn" href="file:///Users/johnkamara/Downloads/The%20Father%20Protocol.html#years">Year by year</a><a class="btn" href="file:///Users/johnkamara/Downloads/The%20Father%20Protocol.html#inner">Inner lives</a><a class="btn" href="file:///Users/johnkamara/Downloads/The%20Father%20Protocol.html#paths">Choose your future</a><a class="btn" href="file:///Users/johnkamara/Downloads/The%20Father%20Protocol.html#cities">Cities of 2030</a></div>
+    <div class="cta"><a class="btn solid" href="#act-p">Begin the story</a><a class="btn" href="#years">Year by year</a><a class="btn" href="#inner">Inner lives</a><a class="btn" href="#paths">Choose your future</a><a class="btn" href="#cities">Cities of 2030</a><a class="btn" href="episode-2/">Episode 2 →</a></div>
   </div>
 </header>
 
